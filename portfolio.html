@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Portfolio</title>
+  <meta name="author" content="Samuel Ramirez-Ramon">
+  <meta name="description" content="Responsive Portfolio Showcase">
+  <meta name="keywords" content="Portfolio, Projects, Tech, Responsive Design">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="yourStyles.css"> <!-- Optional external CSS -->
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-image: url('images/bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      color: #003366;
+    }
+
+    header {
+      height: 150px;
+      background-image: url('images/header-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #0066CC;
+      margin: 20px 0;
+    }
+
+    #figureContainer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.9);
+      max-width: 1200px;
+      margin: auto;
+      border-radius: 12px;
+    }
+
+    figure {
+      margin: 0;
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 960px) {
+      img {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contactme.html">Contact</a>
+  </nav>
+
+  <h1>SamGlobal Tech Portfolio</h1>
+  <h2>Responsive Project Showcase</h2>
+
+  <div id="figureContainer">
+    <main>
+      <figure>
+        <img src="images/pic1.jpg" alt="AI Chatbot Interface">
+        <figcaption>AI Chatbot Interface</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic2.jpg" alt="Custom Gaming PC Build">
+        <figcaption>Custom Gaming PC Build</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic3.jpg" alt="Smart Mesh WiFi Dashboard">
+        <figcaption>Smart Mesh WiFi Dashboard</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic4.jpg" alt="Cloud Integration Workflow">
+        <figcaption>Cloud Integration Workflow</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic5.jpg" alt="Mobile App UI">
+        <figcaption>Mobile App UI</figcaption>
+      </figure>
+      <figure>
+        <img src="images/pic6.jpg" alt="E-commerce Analytics">
+        <figcaption>E-commerce Analytics</figcaption>
+      </figure>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 SamGlobal Tech. All rights reserved.
+  </footer>
+</body>
+</html>
