@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SamGlobalTech Contacts — Sam</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="masthead" role="banner" aria-label="Site banner">
+    <h1 class="sr-only">SamGlobalTech</h1>
+  </header>
+ <nav>
+    <a href="index.html">Home</a> |
+    <a href="myresume.html">My Resume</a> |
+    <a href="contactme.html">Contact Me</a> |
+    <a href="transcript.html">Transcript</a>|
+<a href="portfolio.html">Portfolio</a>|
+<a href="newsletter.html">Newsletter</a>|
+  </nav>
+
+  <main>
+    <section id="contact-area" class="contact-section" aria-labelledby="contact-title">
+
+      <form class="contact-form" action="#" method="post" novalidate>
+        <table class="contact-table" summary="Contact form table with labels and inputs">
+          <thead>
+            <tr>
+              <th colspan="2">Contact Information</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td style="text-align:right"><label for="title">Title</label></td>
+              <td><input id="title" name="title" type="text" /></td>
+            </tr>
+
+            <tr>
+              <td style="text-align:right"><label for="first-name"><span class="required" aria-hidden="true">*</span> First Name</label></td>
+              <td><input id="first-name" name="first-name" type="text" required /></td>
+            </tr>
+
+            <tr>
+              <td style="text-align:right"><label for="last-name"><span class="required" aria-hidden="true">*</span> Last Name</label></td>
+              <td><input id="last-name" name="last-name" type="text" required /></td>
+            </tr>
+
+            <tr>
+              <td style="text-align:right"><label for="city">City</label></td>
+              <td><input id="city" name="city" type="text" /></td>
+            </tr>
+
+            <tr>
+              <td style="text-align:right"><label for="state">ST</label></td>
+              <td>
+                <select id="state" name="state">
+                  <option value="">Select</option>
+                  <option value="FL" selected>Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="AL">Alabama</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="text-align:right"><label for="zip">Zip</label></td>
+              <td><input id="zip" name="zip" type="text" pattern="\d{5}" title="5 digit ZIP" inputmode="numeric" /></td>
+            </tr>
+
+            <tr>
+              <td style="text-align:right"><label for="email"><span class="required" aria-hidden="true">*</span> Email</label></td>
+              <td><input id="email" name="email" type="email" required /></td>
+            </tr>
+
+            <tr>
+              <td style="text-align:right">Gender</td>
+              <td>
+                <label class="inline"><input type="radio" name="gender" value="M" /> M</label>
+                <label class="inline"><input type="radio" name="gender" value="F" /> F</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="text-align:right">Education</td>
+              <td>
+                <label class="inline"><input type="checkbox" name="edu" value="AS" /> AS</label>
+                <label class="inline"><input type="checkbox" name="edu" value="BS" /> BS</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="text-align:right"><label for="comments">Comments</label></td>
+              <td>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                <div class="actions" aria-hidden="false">
+                  <button type="submit">Send</button>
+                  <button type="reset" class="secondary">Clear</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+
+      <section class="alternate-contact" aria-label="Alternate contact">
+        <p><strong>Email:</strong> <a href="mailto:Sramir18@student.scf.edu">Sramir18@student.scf.edu</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+19413238030">(941) 323-8030</a></p>
+      </section>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© SamGlobalTech</p>
+  </footer>
+</body>
+</html>
