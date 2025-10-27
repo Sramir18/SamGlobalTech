@@ -1,0 +1,276 @@
+/* === :root variables === */
+:root{
+  --max-width:1000px;
+  --bg:#fff8e7;
+  --text:#333;
+  --brand-dark:#12324b;
+  --accent:#2b6ea3;
+  --muted:#6b6b6b;
+  --infobar-1:#222;
+  --infobar-2:#444;
+}
+
+/* Reset box sizing */
+*{box-sizing:border-box}
+
+/* === Tag selectors (in order of appearance) === */
+
+/* Page container / Layout and Typography */
+body{
+  max-width:var(--max-width);
+  margin:auto;
+  background-color:var(--bg);
+  background-image:url('Background.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  color:var(--text);
+  font-family:Arial, sans-serif;
+  line-height:1.6;
+  padding:24px;
+  padding-top:100px;
+}
+
+/* Masthead / header */
+header,
+.masthead{
+  height:160px;
+  background-image:url('images/Banner.jpg');
+  background-size:cover;
+  background-position:center;
+  border-bottom:4px solid #e6e6e6;
+  border-radius:6px;
+  text-align:center;
+}
+
+/* Headings */
+h1{
+  color:#006699;
+  font-family:'Segoe UI', sans-serif;
+  font-size:2rem;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:2px 2px 4px rgba(0,0,0,0.15);
+  margin:0.5rem 0;
+}
+
+h2{
+  color:#990000;
+  font-family:Georgia, serif;
+  font-size:1.25rem;
+  font-style:italic;
+  text-align:center;
+  margin:0.25rem 0 1rem;
+}
+
+/* Paragraphs */
+p{
+  text-align:justify;
+  font-family:Arial, sans-serif;
+  font-size:1rem;
+  color:var(--text);
+  margin:0 0 1rem 0;
+}
+
+/* Navigation */
+nav{
+  text-align:center;
+  font-weight:700;
+  background-color:#333;
+  padding:10px 0;
+  margin:18px 0;
+  border-radius:6px;
+}
+
+nav ul{list-style:none;margin:0;padding:0;display:inline-block}
+nav li{display:inline-block;margin:0 12px}
+nav a{
+  color:#fff;
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:6px;
+  position:relative;
+  transition:background .18s,color .18s;
+  display:inline-block;
+}
+nav a:hover{background:#f3f3f3;color:var(--brand-dark)}
+nav a::after{
+  content:'';position:absolute;left:0;bottom:0;width:0;height:2px;
+  background:magenta;transition:width .3s ease;
+}
+nav a:hover::after{width:100%}
+nav a.selected{background:var(--brand-dark);color:#fff;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+
+/* Main content area */
+main{
+  background-color:#fffbea;
+  padding:20px;
+  border-radius:8px;
+  color:var(--brand-dark);
+}
+
+/* Feature article */
+.feature{max-width:900px;margin:30px auto;padding:0 8px}
+.feature h1{color:var(--brand-dark);font-size:2rem;margin-bottom:6px}
+.byline{font-style:italic;color:var(--muted);margin-bottom:14px}
+
+/* Infobar (inverse) */
+.infobar{
+  background:linear-gradient(90deg,var(--infobar-1),var(--infobar-2));
+  color:#f7f7f7;
+  font-weight:700;
+  text-align:center;
+  padding:10px 12px;
+  margin:18px 0;
+  border-radius:6px;
+}
+
+/* Box / special section */
+.box{
+  border:2px solid blue;
+  padding:15px;
+  margin:20px 0;
+  background-color:#f0f8ff;
+  border-radius:8px;
+}
+
+/* Key takeaways */
+.key-takeaways{
+  border:2px solid var(--accent);
+  background:#f5fbff;
+  padding:14px;
+  margin-top:20px;
+  border-radius:8px;
+}
+.key-takeaways h2{color:var(--accent);margin-top:0}
+
+/* Blockquote and first-letter drop cap */
+blockquote{
+  text-align:justify;
+  margin:0 40px 1rem;
+  font-family:'Times New Roman',serif;
+  font-size:1.1rem;
+  line-height:1.6;
+}
+blockquote::first-letter{
+  font-size:1.8em;
+  font-weight:700;
+  color:#003366;
+  float:left;
+  margin-right:0.25rem;
+  line-height:1;
+}
+
+/* Custom bullets */
+ul.custom-bullets{list-style-image:url('images/Point.gif');margin-left:28px;padding-left:0}
+
+/* Styled horizontal rule */
+.styled-line{width:70%;border:3px dashed #cc6600;border-radius:8px;margin:20px auto}
+
+/* Footer */
+footer{
+  color:#0066cc;
+  background-color:#fffbea;
+  font-size:13px;
+  text-align:center;
+  padding:20px 10px;
+  margin-top:40px;
+  border-top:4px solid #0066cc;
+  border-bottom:4px solid #0066cc;
+  border-radius:6px;
+}
+
+/* Small helpers */
+.goodbye{color:red;text-align:center;font-style:italic;margin-top:30px;font-size:16px}
+.disclaimer-box{background-color:#0066cc;color:#000;font-weight:700;padding:10px;margin:20px auto;width:fit-content;border-radius:10px;font-size:14px}
+.important{color:#c00;font-weight:700;font-size:16px;border-left:4px solid #c00;padding-left:10px}
+.highlight{background-color:#ff9;padding:8px;border-radius:6px;box-shadow:0 0 5px rgba(0,0,0,0.1)}
+
+/* Drop-cap for lead paragraph */
+.lead p::first-letter{font-size:2.2rem;font-weight:700;color:var(--brand-dark);float:left;line-height:1;margin-right:8px;padding-top:4px}
+
+/* Images */
+img{max-width:100%;height:auto;display:block;margin:0 auto}
+
+/* === Table and contact form styles used on page === */
+table{border-collapse:collapse}
+th{text-align:center}
+
+/* Contact table */
+.contact-section{width:100%;max-width:760px;padding:0.5rem}
+.contact-table{
+  width:100%;
+  border-collapse:collapse;
+  border:4px solid #003399;
+  background:#ffffff;
+  box-shadow:0 6px 18px rgba(3,27,77,0.06);
+}
+.contact-table td,
+.contact-table th{padding:12px}
+.contact-table th{
+  background:linear-gradient(180deg,#0053cc 0%,#003399 100%);
+  color:#ffffff;
+  font-size:1.15rem;
+  padding:16px;
+  font-weight:600;
+  letter-spacing:0.02em;
+}
+.contact-table td{vertical-align:middle;border-top:1px solid rgba(0,0,0,0.06)}
+.contact-table td:first-child{width:36%;padding-right:1rem;vertical-align:top;color:#0b2b4a;font-weight:600}
+
+.contact-table input[type="text"],
+.contact-table input[type="email"],
+.contact-table input[type="tel"],
+.contact-table input[type="url"],
+.contact-table select,
+.contact-table textarea{
+  width:100%;
+  box-sizing:border-box;
+  padding:8px 10px;
+  border:1px solid #cbd7ee;
+  border-radius:4px;
+  background:#fbfcff;
+  font-size:0.95rem;
+  color:#0b2239;
+}
+
+.contact-table button{
+  background:#003399;
+  color:#fff;
+  border:none;
+  padding:8px 12px;
+  border-radius:4px;
+  cursor:pointer;
+  font-weight:600;
+  margin-top:8px;
+}
+.contact-table button.secondary{background:#7c8db8;margin-left:8px}
+.inline{margin-right:1rem;font-weight:400}
+.actions{margin-top:8px}
+.required{color:red;font-weight:700;margin-right:4px}
+
+/* === ID selectors === */
+#contact-area{margin:1rem auto}
+
+/* === Class selectors (custom classes last) === */
+.contact-section{} /* already defined above for layout */
+
+/* === Responsive rules === */
+@media (max-width:720px){
+  body{padding:16px;padding-top:80px}
+  header,.masthead{height:120px}
+  nav ul{display:block}
+  nav li{display:block;margin:6px 0}
+  nav a{display:block;width:90%;margin:0 auto}
+  .feature{padding:0 12px}
+  .key-takeaways{margin:16px 8px}
+  blockquote{margin:0 16px}
+}
+
+@media (max-width:560px){
+  .contact-table td:first-child{display:block;width:100%;text-align:left;padding-bottom:6px}
+  .contact-table td:last-child{display:block}
+  .contact-table th{font-size:1rem}
+  /* small layout adjustments for narrow viewports */
+  .feature{padding:0 12px}
+}
